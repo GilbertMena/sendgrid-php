@@ -1,7 +1,7 @@
 <?php
 
-namespace SendGrid;
-
+namespace SendGrid\SendGrid;
+use SMTPApi\SMTPApi\Header;
 class Email {
 
   public $to, 
@@ -20,7 +20,7 @@ class Email {
   public function __construct() {
     $this->from_name        = false;
     $this->reply_to         = false;
-    $this->smtpapi          = new \Smtpapi\Header();
+    $this->smtpapi          = new Header();
   }
 
   /**

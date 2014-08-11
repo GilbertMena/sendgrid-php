@@ -1,4 +1,5 @@
 <?php
+namespace SendGrid;
 
 class SendGrid {
   const VERSION = "2.1.1";
